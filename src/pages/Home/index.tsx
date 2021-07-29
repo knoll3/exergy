@@ -1,5 +1,7 @@
 import React from "react";
+import { useStyles } from "./styles";
 
 export const Home: React.FC = () => {
-    return <div>Home</div>;
+    const classes = useStyles();
+    return <div className={classes.main}>Home</div>;
 };
