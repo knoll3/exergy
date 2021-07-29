@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Exergy
+
+A personal custom component library.
+
+In thermodynamics, the exergy of a system is the maximum useful work possible during a process that brings the system into equilibrium with a heat reservoir, reaching maximum entropy.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
