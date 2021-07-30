@@ -1,4 +1,6 @@
-import { Theme } from "./theme";
+import { Theme } from "types/Theme";
+
+const unitSpace = 8;
 
 export const darkTheme: Theme = {
     palette: {
@@ -13,5 +15,11 @@ export const darkTheme: Theme = {
         },
         appBar: "#031f30",
         divider: "#4f6071",
+    },
+    spacing: (s: number) => `${s * unitSpace}px`,
+    typography: {
+        small: "12px",
+        medium: "18px",
+        large: "24px",
     },
 };

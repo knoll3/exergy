@@ -12,4 +12,10 @@ export interface Theme {
         appBar: string;
         divider: string;
     };
+    spacing: (s: number) => string;
+    typography: {
+        small: string;
+        medium: string;
+        large: string;
+    };
 }
