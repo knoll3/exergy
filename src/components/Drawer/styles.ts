@@ -6,8 +6,8 @@ export const useStyles = createUseStyles((theme: Theme) => ({
         height: "100vh",
         background: theme.palette.background.secondary,
         paddingTop: theme.spacing(3),
-        paddingLeft: theme.spacing(6),
-        paddingRight: theme.spacing(6),
+        paddingLeft: theme.spacing(9),
+        paddingRight: theme.spacing(9),
         borderRight: `1px solid ${theme.palette.divider}`,
     },
 }));

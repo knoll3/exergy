@@ -17,5 +17,6 @@ export interface Theme {
         small: string;
         medium: string;
         large: string;
+        title: string;
     };
 }

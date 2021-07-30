@@ -1,4 +1,4 @@
-import { TimelinePage } from "pages/docs/Timeline";
+import { TimelinePage } from "pages/docs/TimelinePage";
 import { Home } from "pages/Home";
 import { Route } from "types/Route";
 

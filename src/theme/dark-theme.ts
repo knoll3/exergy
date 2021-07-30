@@ -21,5 +21,6 @@ export const darkTheme: Theme = {
         small: "12px",
         medium: "18px",
         large: "24px",
+        title: "36px",
     },
 };
