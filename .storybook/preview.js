@@ -9,6 +9,19 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  backgrounds: {
+    default: "exergy-primary",
+    values: [
+      {
+        name: "exergy-primary",
+        value: "#031f30",
+      },
+      {
+        name: "exergy-secondary",
+        value: "#0e161b",
+      },
+    ],
+  },
 };
 
 export const decorators = [
