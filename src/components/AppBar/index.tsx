@@ -9,7 +9,10 @@ export const AppBar: React.FC<AppBarProps> = ({}) => {
 
   return (
     <div className={classes.appBar}>
-      <img className={classes.logo} src={ExergyLogo} alt="exergy-logo" />
+      <div className={classes.container}>
+        <img className={classes.logo} src={ExergyLogo} alt="exergy-logo" />
+      </div>
+      <div className={classes.glow}></div>
     </div>
   );
 };

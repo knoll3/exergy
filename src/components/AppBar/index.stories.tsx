@@ -13,5 +13,5 @@ const Template: Story<ComponentProps<typeof AppBar>> = (args) => (
   <AppBar {...args} />
 );
 
-export const Thing = Template.bind({});
-Thing.args = {};
+export const Main = Template.bind({});
+Main.args = {};
