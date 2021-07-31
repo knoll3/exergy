@@ -2,6 +2,7 @@ import { Theme } from "types/Theme";
 
 const unitSpace = 8;
 
+// Logo color is not controlled by theme
 export const darkTheme: Theme = {
   palette: {
     primary: "#4098ed",
