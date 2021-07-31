@@ -13,9 +13,16 @@ const Template: Story<ComponentProps<typeof Button>> = (args) => (
   <Button {...args} />
 );
 
-export const FirstStory = Template.bind({});
-FirstStory.args = {
+export const Contained = Template.bind({});
+Contained.args = {
   label: "Button",
   size: "medium",
   variant: "contained",
+};
+
+export const Outlined = Template.bind({});
+Outlined.args = {
+  label: "Button",
+  size: "medium",
+  variant: "outlined",
 };
