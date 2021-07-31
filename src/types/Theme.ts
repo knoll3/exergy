@@ -1,5 +1,6 @@
 export interface Theme {
   palette: {
+    primary: string;
     background: {
       primary: string;
       secondary: string;

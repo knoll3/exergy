@@ -5,14 +5,24 @@ interface ButtonProps {
   label: string;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
   size: "small" | "medium" | "large";
+  variant: "outlined" | "contained";
 }
 
-export const Button: React.FC<ButtonProps> = ({ label, onClick, size }) => {
+export const Button: React.FC<ButtonProps> = ({
+  label = "Button",
+  onClick,
+  size = "medium",
+  variant = "contained",
+}) => {
   const classes = useStyles();
-  // return <button className={classes.button}>{label}</button>;
+
+  const classNames = [classes.button];
+  classNames.push(classes[variant]);
+  classNames.push(classes[size]);
+
   return (
-    <div className={classes.button}>
-      The quick brown fox jumped over the lazy dog
-    </div>
+    <button onClick={onClick} className={classNames.join(" ")}>
+      {label}
+    </button>
   );
 };

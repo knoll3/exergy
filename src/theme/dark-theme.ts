@@ -4,6 +4,7 @@ const unitSpace = 8;
 
 export const darkTheme: Theme = {
   palette: {
+    primary: "#4098ed",
     background: {
       primary: "#031f30",
       secondary: "#0e161b",
@@ -18,10 +19,11 @@ export const darkTheme: Theme = {
   },
   spacing: (s: number) => `${s * unitSpace}px`,
   typography: {
-    small: "12px",
-    medium: "18px",
-    large: "24px",
+    small: "10px",
+    medium: "14px",
+    large: "18px",
     title: "36px",
   },
+  // Add new fonts here and to src/index.css
   fontFamily: "'Mukta', sans-serif",
 };
