@@ -24,10 +24,13 @@ export const parameters = {
   },
 };
 
+// Apply the font family in a container around the Story component
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={darkTheme}>
-      <Story />
+      <div style={{ fontFamily: darkTheme.fontFamily }}>
+        <Story />
+      </div>
     </ThemeProvider>
   ),
 ];
