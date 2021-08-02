@@ -9,16 +9,30 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     padding: "0.5em 1em 0.5em 1em",
     fontWeight: "bold",
     cursor: "pointer",
+    position: "relative",
+
+    transition: "all 0.2s",
   },
 
   // Variant
   outlined: {
-    background: "none",
+    background: "inherit",
     border: `2px solid ${theme.palette.text.secondary}`,
     color: theme.palette.text.secondary,
 
     "&:hover": {
       filter: "brightness(150%)",
+
+      "&:after": {
+        content: '""',
+        zIndex: -1,
+        position: "absolute",
+        top: 0,
+        left: 0,
+        height: "100%",
+        width: "100%",
+        boxShadow: `0px 0px 10px 2px ${theme.palette.primary}`,
+      },
     },
     "&:active": {
       background: theme.palette.text.secondary,
